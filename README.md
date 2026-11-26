@@ -32,15 +32,11 @@ mvn test
 
 У каждого сценария свой ID заказа и consumer group, поэтому сценарии могут выполняться параллельно.
 
-## Демонстрация сервиса
-
-Запустите локальный Kafka в Docker:
+## Запуск
 
 ```powershell
 docker compose up -d
 ```
-
-Затем во втором терминале запустите приложение в профиле `demo`:
 
 ```powershell
 mvn spring-boot:run "-Dspring-boot.run.profiles=demo"
@@ -55,7 +51,7 @@ Processed order: orderId=demo-invalid-..., amount=0, status=REJECTED
 
 По умолчанию приложение использует `localhost:9092`. Адрес можно изменить через `KAFKA_BOOTSTRAP_SERVERS`.
 
-Остановить Kafka:
+Остановить:
 
 ```powershell
 docker compose down
