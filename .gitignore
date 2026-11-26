@@ -24,4 +24,8 @@ hs_err_pid*
 replay_pid*
 
 # Local design notes
-docs/superpowers/specs/
+docs/
+
+
+# Maven build output
+target/
